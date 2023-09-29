@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e4e7eb !important;
+  margin: 5% !important;
+}
+
+/*
+
+Paleta de Colores 
+
+#F5F7FA
+#E4E7EB
+#A0AEC0
+#718096 
+#4A5568 */
+/*Fuente */
+@font-face {
+  font-family: "pokemon";
+  src: url("../assets/pokemon.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* imagenes y titulos */
+.d-inline-block {
+  width: 18.75rem;
+}
+
+.img-fluid {
+  width: 9.375rem;
+}
+.img-fluid:hover {
+  filter: drop-shadow(10px 10px 10px black);
+}
+
+.titulo {
+  font-family: "pokemon";
+}
+
+.card-title {
+  font-family: "pokemon";
+
+  font-size: 2.25rem;
+}
+
+.img-fluid:hover .card-title {
+  /* Aplica estilos al .card-title cuando el contenedor está en hover */
+  /* Por ejemplo, podrías cambiar el color del texto del título */
+  font-size: 14rem !important;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 700px;
+  position: absolute;
+  top: 4rem;
+}
+.img {
+  width: 46.876rem;
+  position: absolute;
+  top: 8rem;
+}
+.contBanner {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#cont {
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #4a5568;
+}
+.tituloFooter {
+  font-family: monospace;
+  color: #e4e7eb;
+  text-align: center;
+}
+
+.contCarru {
+  margin-bottom: 5rem;
+
+  /* slick */
+  .slick-next {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #4a5568;
+    color: white;
+  }
+  .slick-next:hover {
+    width: 80px;
+    font-size: 16px;
+  }
+
+  .slick-prev:hover {
+    width: 80px;
+    font-size: 16px;
+  }
+
+  .slick-prev {
+    width: 100px;
+    position: relative;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+    background-color: #4a5568;
+    color: white;
+  }
+
+  .slick-dots {
+    display: flex;
+    text-decoration: none;
+  }
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .contBanner {
+    margin-bottom: 30rem;
+  }
+}
